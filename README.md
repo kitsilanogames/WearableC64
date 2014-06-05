@@ -7,6 +7,7 @@ Likely to be built using vice.js (https://github.com/rjanicek/vice.js/).
 
 How to install
 ==============
+Download https://www.dropbox.com/s/naa5i2al3f2jd6i/basictest.wgt
 sdb install basictest.wgt
 
 
