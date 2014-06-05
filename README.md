@@ -1,8 +1,8 @@
 WearableC64
 ===========
 
-Commodore64 emulator for the Samsung Gear 2 smartwatch.
-Likely to be built using vice.js (https://github.com/rjanicek/vice.js/).
+* Commodore64 emulator for the Samsung Gear 2 smartwatch.
+* Likely to be built using vice.js (https://github.com/rjanicek/vice.js/).
 
 
 How to install
