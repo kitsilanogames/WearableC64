@@ -4,5 +4,6 @@
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
-    <name>basictest</name>
+    <name>Wearable C64</name>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
 </widget>

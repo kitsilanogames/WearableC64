@@ -1,8 +1,0 @@
-#delete
-#add
-res/wgt/basictest.wgt.zip
-res/wgt/js/x64.js
-#modify
-res/wgt/author-signature.xml
-res/wgt/index.html
-res/wgt/signature1.xml
