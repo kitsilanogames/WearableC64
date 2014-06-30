@@ -14,6 +14,7 @@ function init() {
 
 	document.addEventListener('tizenhwkey', onTizenHwKey);
 	initWC64();
+	initJoystick ();
 }
 
 function initWC64() {
@@ -34,40 +35,7 @@ function initWC64() {
 	jsc64Instance._renderer.frameTimer.addEventListener('timer', awaitBoot);
 
 	$('#load_btn').click(function() {
-		jsc64.loadPrg('roms/RALLYSPEEDWAYII.PRG');
+		$('#load_btn').hide('slow');
+		jsc64.loadPrg('roms/COLOURGALAGA.PRG');
 	});
-	
-	var joystickCenter = function () {
-		console.log('center');
-	};
-	
-	var joystickFire = function () {
-		console.log('fire');
-	};
-	
-	var joystickUp = function () {
-		console.log('up');
-	};
-	
-	var joystickDown = function () {
-		console.log('down');
-	};
-	
-	var joystickLeft = function () {
-		console.log('left');
-	};
-	
-	var joystickRight = function () {
-		console.log('right');
-	};
-	
-	initJoystick (joystickCenter, joystickFire, joystickLeft, joystickRight, joystickUp, joystickDown)
-	
-	// $('#pauseButton').click(function() {
-	// jsc64.jsc64Pause();
-	// });
-	// $('#romList a').click(function() {
-	// jsc64.loadPrg($(this).attr('href'));
-	// return false;
-	// });
 }
