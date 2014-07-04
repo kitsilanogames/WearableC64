@@ -6,7 +6,7 @@ var JoystickEvents = {
 	UP: 104,
 	RIGHT: 102,
 	DOWN: 98,
-	TRESHOLD: 5
+	THRESHOLD: 5
 };
 
 var X,Y;
@@ -47,13 +47,13 @@ function onTouchMove (ev) {
 	console.log ('touchmove x,y: ' + distX + ', ' + distY);
 	
 	if (fromX >= 0) { // there was movement in the X direction
-		if (distX > JoystickEvents.TRESHOLD) triggerKeypress(JoystickEvents.RIGHT);
-		else if (distX < -JoystickEvents.TRESHOLD) triggerKeypress(JoystickEvents.LEFT);
+		if (distX > JoystickEvents.THRESHOLD) triggerKeypress(JoystickEvents.RIGHT);
+		else if (distX < -JoystickEvents.THRESHOLD) triggerKeypress(JoystickEvents.LEFT);
 	}
 	
 	if (fromY >= 0) { // there was movement in the Y direction
-		if (distY > JoystickEvents.TRESHOLD) triggerKeypress(JoystickEvents.DOWN);
-		else if (distY < -JoystickEvents.TRESHOLD) triggerKeypress(JoystickEvents.UP);
+		if (distY > JoystickEvents.THRESHOLD) triggerKeypress(JoystickEvents.DOWN);
+		else if (distY < -JoystickEvents.THRESHOLD) triggerKeypress(JoystickEvents.UP);
 	}
 }
 
